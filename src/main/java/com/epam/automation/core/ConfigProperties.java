@@ -25,7 +25,7 @@ public abstract class ConfigProperties {
     public static final String TEST_REPORT_FILE_LOCATION =  PROPERTIES_UTIL.getProperty("testReportFileLocation");
     public static final String TEST_REPORT_FILE_NAME =  PROPERTIES_UTIL.getProperty("testReportFileName");
 
-	public static final ExcelReader XL_READER = new ExcelReader(TEST_DATA_FILE_LOCATION + "\\" + TEST_DATA_FILE_NAME);
+	public static final ExcelReader XL_READER = new ExcelReader("data\\TestData.xlsx");//TEST_DATA_FILE_LOCATION + "\\" + TEST_DATA_FILE_NAME);
 	protected static final Map<String, String> CONFIG_DATA = XL_READER.fromSheet("Configuration").getDataFromColumn("Value");
 	
 	public static final String ENVIRONMENT =  CONFIG_DATA.get("Environment");

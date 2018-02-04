@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme -->
+        <!-- standard, dark -->
+        <theme>dark</theme>
+    
+        <!-- document encoding -->
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+        
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>https</protocol>
+        
+        <!-- title of the document -->
+        <documentTitle>Edmunds Automation</documentTitle>
+        
+        <!-- report name - displayed at top-nav -->
+        <!-- <reportName>Edmunds Salesforce Automation - Test Report</reportName> -->
+       
+       <reportName>
+	       	<![CDATA[
+	            <img src='../src/main/resources/images/logo-edmunds.png' height="15" width="140" alt="Edmunds"/>
+	            <font face="lucida console" size="5" color="grey" >&nbsp;Salesforce Automation - Test Report </font>
+	        ]]>
+		</reportName>
+        
+        <!-- location of charts in the test view -->
+        <!-- top, bottom -->
+        <testViewChartLocation>bottom</testViewChartLocation>
+        <timeFormat>HH:mm:ss</timeFormat>
+        
+        <!-- custom javascript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                });
+            ]]>
+        </scripts>
+      
+              <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    $('.dashboard-view').click(); 
+                });
+            ]]>
+        </scripts>
+        <!-- custom styles -->
+        <styles>
+            <![CDATA[
+            
+            .logo-container {
+				display: none;  }
+                
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Edmunds Salesforce Automation" >
+
+<test name="Edmunds-Tests" >
+	 <parameter name="browser" value="chrome"/>
+	 <parameter name="platform" value="non-windows" />  
+	 <parameter name="environment" value="jenkins"/>
+	 	 <classes>
+				<class name="com.edmunds.TestNGExecutor" />			
+		</classes>
+	 </test>
+
+</suite>

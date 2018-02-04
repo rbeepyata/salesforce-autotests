@@ -20,7 +20,7 @@ public class Rough {
 	@Test
 	public void test() throws InterruptedException{
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "lib//drivers//linux//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "lib//drivers//linux//chrome2.25//chromedriver");
 		driver = new ChromeDriver();	
 		
 		driver.get("http://google.com");

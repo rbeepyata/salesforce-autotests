@@ -8,7 +8,7 @@
 	 <parameter name="platform" value="windows" />  
 	 <parameter name="environment" value="local"/>
 	<classes>
-		<class name="com.edmunds.tests.BillingGoLiveUseCase" />
+		<class name="com.edmunds.TestNGExecutor" />
 	</classes>
 </test>  
 

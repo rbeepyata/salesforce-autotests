@@ -50,15 +50,15 @@ public class AutomationTools {
 			    
 			} else if (platform.equalsIgnoreCase("non-windows")) {
 				
-				System.setProperty("webdriver.chrome.driver", "lib//drivers//linux//chromedriver");
-				ChromeOptions chromeOptions = new ChromeOptions();
-				chromeOptions.addArguments("--start-maximized");
-			    chromeOptions.addArguments("disable-infobars");
-			    Map<String, Object> prefs = new HashMap<String, Object>();
-			    prefs.put("credentials_enable_service", false);
-			    prefs.put("profile.password_manager_enabled", false);
-			    chromeOptions.setExperimentalOption("prefs", prefs);
-				driver = new ChromeDriver(chromeOptions);
+//				System.setProperty("webdriver.chrome.driver", "lib//drivers//linux//chromedriver");
+//				ChromeOptions chromeOptions = new ChromeOptions();
+//				chromeOptions.addArguments("--start-maximized");
+//			    chromeOptions.addArguments("disable-infobars");
+//			    Map<String, Object> prefs = new HashMap<String, Object>();
+//			    prefs.put("credentials_enable_service", false);
+//			    prefs.put("profile.password_manager_enabled", false);
+//			    chromeOptions.setExperimentalOption("prefs", prefs);
+//				driver = new ChromeDriver(chromeOptions);
 
 			} else if (platform.equalsIgnoreCase("seleniuim-docker")) {
 				

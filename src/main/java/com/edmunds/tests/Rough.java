@@ -20,7 +20,7 @@ public class Rough {
 	@Test
 	public void test() throws InterruptedException{
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "lib//drivers//linux//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "lib//drivers//linux32//chromedriver");
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--start-maximized");
 	    chromeOptions.addArguments("disable-infobars");

@@ -20,15 +20,8 @@ public class Rough {
 	@Test
 	public void test() throws InterruptedException{
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "lib//drivers//linux32//chromedriver");
-		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.addArguments("--start-maximized");
-	    chromeOptions.addArguments("disable-infobars");
-	    Map<String, Object> prefs = new HashMap<String, Object>();
-	    prefs.put("credentials_enable_service", false);
-	    prefs.put("profile.password_manager_enabled", false);
-	    chromeOptions.setExperimentalOption("prefs", prefs);
-		driver = new ChromeDriver(chromeOptions);	
+		System.setProperty("webdriver.chrome.driver", "lib//drivers//linux64//chromedriver");
+		driver = new ChromeDriver();	
 		
 		driver.get("http://google.com");
 		
